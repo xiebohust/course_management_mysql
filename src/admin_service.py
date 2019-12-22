@@ -1,4 +1,4 @@
-from src.models import School
+from src.models import School,Classes
 
 menu = """
 1.创建学校
@@ -11,7 +11,8 @@ menu = """
 
 def create_school():
     name = input('input school name:')
-
+    school_obj = School(name)
+    school_obj.save()
 
 def get_school_list():
     for i in School.get_all():
@@ -19,23 +20,13 @@ def get_school_list():
 
 
 def create_class():
-    list_school = ''
-    # school_name = input('choose school name:')
-    # if school_name in list_school:
-    #     school_id = str(models.School(school_name).nid)
-    #     name = input('input class name:')
-    #     tuition = input('tuition:')
-    #
-    #     course_to_teacher_list = input('course_to_teacher_list')
-    #     obj_school = models.Classes(name=name, tuition=tuition,school_id=school_id,course_to_teacher_list=course_to_teacher_list)
-    #     obj_school.save()
-    # else:
-    #     print('学校不存在')
+    name = input('input class name:')
+    school_obj = Classes(name)
+    school_obj.save()
 
 def get_class_list():
-    # for obj_sch in models.Classes.get_all():
-    #     print(str(obj_sch))
-    pass
+    for i in Classes.get_all():
+        print(str(i))
 
 def create_course():
     name = input('input class name:')
