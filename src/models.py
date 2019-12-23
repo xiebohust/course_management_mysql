@@ -1,12 +1,14 @@
 from config import setting
 import pickle
 import os
+from lib.commons import create_uuid
 
 
 class Base:
     db_path = 'base'
     def __init__(self, name):
         self.name = name
+        self.id = create_uuid()
 
     def __str__(self):
         return self.name
@@ -55,11 +57,23 @@ class School(Base):
 class Classes(Base):
     db_path = setting.CLASSES_DB
 
+    def __init__(self,name):
+        super().__init__(name)
+        self.school_id = None
+
+
+
 
 if __name__ == '__main__':
-    sch_obj = School('henan')
-    sch_obj.save()
-
-
-    for i in School.get_all():
-        print(str(i))
+    # sch_obj = School('henan')
+    # print(sch_obj.id)
+    #
+    #
+    # for i in School.get_all():
+    #     print(str(i))
+    class_obj = Classes('python')
+    school_obj = School('henan')
+    school_obj.save()
+    class_obj.school_id = school_obj.id
+    class_obj.save()
+    print(class_obj.id,class_obj.school_id)
