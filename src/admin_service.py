@@ -1,4 +1,4 @@
-from src.models import School,Classes
+from src.models import School,Classes,Course,Teacher
 
 menu = """
 1.创建学校
@@ -11,36 +11,30 @@ menu = """
 
 def create_school():
     name = input('input school name:')
-    school_obj = School(name)
-    school_obj.save()
+    School(name)
+
 
 def get_school_list():
-    for i in School.get_all():
-        print(str(i))
+    School.get_all()
 
 
 def create_class():
+    school_name = input('school name:')
     name = input('input class name:')
-    school_obj = Classes(name)
-    school_obj.save()
+    Classes(name,school_name)
 
 def get_class_list():
-    for i in Classes.get_all():
-        print(str(i))
+    Classes.get_all()
 
 def create_course():
     name = input('input class name:')
     tuition = input('tuition:')
     school_id = input('school')
-    # course_to_teacher_list = input('')
-    # obj_school = models.Classes(name=name, tuition=tuition,school_id=school_id,course_to_teacher_list=course_to_teacher_list)
-    # obj_school.save()
+
 
 def get_course_list():
-    pass
 
-    # for obj_sch in models.Course.get_all():
-    #     print(str(obj_sch))
+    Course.get_all()
 
 action_list = {
     '1':create_school,
