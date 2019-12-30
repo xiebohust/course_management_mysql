@@ -22,4 +22,3 @@ sys.path.append(BASE_DIR)
 
 if __name__ == "__main__":
     print(BASE_DIR)
-    print(db_path)

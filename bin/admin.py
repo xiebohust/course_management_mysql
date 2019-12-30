@@ -10,6 +10,9 @@ from src.models import School,Classes
 # https://www.cnblogs.com/zuoan104/p/11422483.html
 # https://www.cnblogs.com/wuliwawa/p/9655672.html
 
+
+
+
 from src.admin_service import main
 
 if __name__ == '__main__':

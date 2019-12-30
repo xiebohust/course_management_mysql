@@ -25,8 +25,8 @@ class Base:
     def get_obj_by_id(cls,id):
         try:
             f = open(os.path.join(cls.db_path,id),'rb')
-        except Exception:
-            print('not found')
+        except Exception as e:
+            print(e)
         else:
             obj = pickle.load(f)
             return obj
@@ -64,8 +64,6 @@ class Base:
             f = open(os.path.join(cls.db_path, item), 'rb')
             school_obj = pickle.load(f)
             l.append(school_obj)
-        for item in l:
-            print(str(item))
         return l
 
 class School(Base):
@@ -75,13 +73,12 @@ class School(Base):
 class Classes(Base):
     db_path = setting.CLASSES_DB
 
-    def __init__(self,name,school_name):
+    def __init__(self,name,school_id): #在主函数时候获取关联id
+        self.school_id = school_id
         super().__init__(name)
-        self.school_id = School.get_id_by_name(school_name)
 
 
-class Teacher(Base):
-    db_path = setting.TEACHER_DB
+
 
 class Course(Base):
     db_path = setting.COURSE_DB
@@ -91,7 +88,12 @@ if __name__ == '__main__':
     s1 = School('beida')
     s2 = School('qinghua')
     print(s1.id,s1.name,s2.id,s2.name)
+
     c1 = Classes('shuxue','beida')
     print(c1.id,c1.name,c1.school_id)
     c2 = Classes('yuwen','qinghua')
     print(c2.id,c2.name,c2.school_id)
+
+
+    c = Classes.get_obj_by_name('shuxue')
+    print(c.id,c.name,c.school_id)
