@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91d68607-4f75-41cc-9189-3c44069c945e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/school/a818d094-2730-11ea-a1ca-60334b975da2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/school/bcb3d052-2731-11ea-a29e-60334b975da2" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/course_management.iml" afterPath="$PROJECT_DIR$/.idea/course_management.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/admin.py" afterPath="$PROJECT_DIR$/bin/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/setting.py" afterPath="$PROJECT_DIR$/config/setting.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/a.py" afterPath="$PROJECT_DIR$/src/a.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/admin_service.py" afterPath="$PROJECT_DIR$/src/admin_service.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models.py" afterPath="$PROJECT_DIR$/src/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mysql.py" afterPath="$PROJECT_DIR$/src/mysql.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,7 +23,7 @@
     <SUITE FILE_PATH="coverage/course_management$aa.coverage" NAME="aa Coverage Results" MODIFIED="1577007351898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aaaa" />
     <SUITE FILE_PATH="coverage/course_management$a.coverage" NAME="a Coverage Results" MODIFIED="1577008286289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/course_management$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1576941145393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/course_management_mysql$mysql.coverage" NAME="mysql Coverage Results" MODIFIED="1577708116984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/course_management_mysql$mysql.coverage" NAME="mysql Coverage Results" MODIFIED="1577790616732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/course_management$db_handler_upgrade.coverage" NAME="db_handler_upgrade Coverage Results" MODIFIED="1576935359277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/course_management_mysql$b.coverage" NAME="b Coverage Results" MODIFIED="1577697111472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/course_management$de.coverage" NAME="de Coverage Results" MODIFIED="1576833689391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -74,13 +65,16 @@
       <file leaf-file-name="mysql.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/mysql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+            <state relative-caret-position="143">
+              <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding>
-                <marker date="1577708116979" expanded="true" signature="378:434" ph="insert into table... " />
-                <marker date="1577708116979" expanded="true" signature="651:676" ph="select * fro... where" />
-                <marker date="1577708116979" expanded="true" signature="651:681" ph="select * fro... " />
-                <marker date="1577708116979" expanded="true" signature="996:1027" ph="select * fro... student" />
+                <marker date="1577790616722" expanded="true" signature="1069:1101" ph="select * fro... student" />
+                <marker date="1577790616722" expanded="true" signature="1562:1618" ph="insert into table... " />
+                <marker date="1577790616722" expanded="true" signature="1836:1866" ph="select * fro... where" />
+                <marker date="1577790616722" expanded="true" signature="1836:1871" ph="select * fro... " />
+                <marker date="1577790616722" expanded="true" signature="2180:2203" ph="update stude... " />
+                <marker date="1577790616722" expanded="true" signature="2180:2223" ph="update stude... " />
+                <marker date="1577790616722" expanded="true" signature="2180:2225" ph="update stude... " />
               </folding>
             </state>
           </provider>
@@ -131,8 +125,8 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/lib/python3.7/site-packages/pymysql/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="92" column="36" lean-forward="false" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
+            <state relative-caret-position="178">
+              <caret line="92" column="35" lean-forward="true" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -141,8 +135,8 @@
       <file leaf-file-name="connections.py" pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/lib/python3.7/site-packages/pymysql/connections.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1329">
-              <caret line="115" column="6" lean-forward="false" selection-start-line="115" selection-start-column="6" selection-end-line="115" selection-end-column="6" />
+            <state relative-caret-position="161">
+              <caret line="129" column="15" lean-forward="false" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -198,8 +192,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="306" />
-    <option name="y" value="40" />
+    <option name="x" value="207" />
+    <option name="y" value="23" />
     <option name="width" value="1226" />
     <option name="height" value="719" />
   </component>
@@ -565,17 +559,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="306" y="40" width="1226" height="719" extended-state="0" />
+    <frame x="207" y="23" width="1226" height="719" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24493243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34775373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34775373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32445922" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32445922" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -706,22 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/pymysql/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="92" column="36" lean-forward="false" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/pymysql/connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1329">
-          <caret line="115" column="6" lean-forward="false" selection-start-line="115" selection-start-column="6" selection-end-line="115" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.1/python_stubs/-708186469/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -778,15 +756,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/pymysql/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="92" column="35" lean-forward="true" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/pymysql/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="129" column="15" lean-forward="false" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/mysql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        <state relative-caret-position="143">
+          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding>
-            <marker date="1577708116979" expanded="true" signature="378:434" ph="insert into table... " />
-            <marker date="1577708116979" expanded="true" signature="651:676" ph="select * fro... where" />
-            <marker date="1577708116979" expanded="true" signature="651:681" ph="select * fro... " />
-            <marker date="1577708116979" expanded="true" signature="996:1027" ph="select * fro... student" />
+            <marker date="1577790616722" expanded="true" signature="1069:1101" ph="select * fro... student" />
+            <marker date="1577790616722" expanded="true" signature="1562:1618" ph="insert into table... " />
+            <marker date="1577790616722" expanded="true" signature="1836:1866" ph="select * fro... where" />
+            <marker date="1577790616722" expanded="true" signature="1836:1871" ph="select * fro... " />
+            <marker date="1577790616722" expanded="true" signature="2180:2203" ph="update stude... " />
+            <marker date="1577790616722" expanded="true" signature="2180:2223" ph="update stude... " />
+            <marker date="1577790616722" expanded="true" signature="2180:2225" ph="update stude... " />
           </folding>
         </state>
       </provider>
